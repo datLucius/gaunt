@@ -8,7 +8,7 @@
 </head>
 <body style="display: flex; justify-content: center; background-color: yellow;">
   <label for="gauntinput" id="gauntlabel" style="cursor: pointer; margin-top: 40px;">
-        <img src="gaunt_upload_button.png" width="400px"/>
+        <img src="gaunt_upload_button.png" width="300px"/>
   </label>
   <input type="file" onchange="readURL(this)" id="gauntinput" style="display:none;" accept="image/*"/>
   <script>
@@ -20,7 +20,7 @@
             reader.onload = function (e) {
               const uGaunt = document.createElement('img');
                 uGaunt.setAttribute('src', e.target.result);
-                uGaunt.setAttribute('width', 400);
+                uGaunt.setAttribute('width', 300);
                 uGaunt.setAttribute('height', 2000);
                 ginput.parentNode.removeChild(glabel);
                 ginput.parentNode.appendChild(uGaunt);
